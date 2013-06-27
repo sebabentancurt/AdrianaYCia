@@ -1,3 +1,25 @@
+/*Cambiar color PlaceHolder de Search*/
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    white;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    white;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    white;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    white;
+}
+
+/*Eliminar estilos por defecto de navegador*/
+input[type=search] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+}
+
 html,body {
 	width: 100%;
 	height: 100%;
@@ -15,7 +37,7 @@ html,body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffe8', endColorstr='#d6dbbf',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 	cursor: default;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	
+	font-size: 16px;
 }
 div#global {
   width: 980px;
@@ -27,19 +49,18 @@ div#global {
   top: 0;
   width: 100%;
   height: auto;
-background: rgb(255,127,4); /* Old browsers */
-/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmN2YwNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg0JSIgc3RvcC1jb2xvcj0iI2ZmYTczZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmI3NmIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-background: -moz-linear-gradient(top,  rgba(255,127,4,1) 0%, rgba(255,167,61,1) 84%, rgba(255,183,107,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,127,4,1)), color-stop(84%,rgba(255,167,61,1)), color-stop(100%,rgba(255,183,107,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(255,127,4,1) 0%,rgba(255,167,61,1) 84%,rgba(255,183,107,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(255,127,4,1) 0%,rgba(255,167,61,1) 84%,rgba(255,183,107,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(255,127,4,1) 0%,rgba(255,167,61,1) 84%,rgba(255,183,107,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(255,127,4,1) 0%,rgba(255,167,61,1) 84%,rgba(255,183,107,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7f04', endColorstr='#ffb76b',GradientType=0 ); /* IE6-8 */
+  background: rgb(255,127,4); /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmN2YwNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg0JSIgc3RvcC1jb2xvcj0iI2ZmYTczZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmI3NmIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  rgba(255,127,4,1) 0%, rgba(255,167,61,1) 84%, rgba(255,183,107,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,127,4,1)), color-stop(84%,rgba(255,167,61,1)), color-stop(100%,rgba(255,183,107,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(255,127,4,1) 0%,rgba(255,167,61,1) 84%,rgba(255,183,107,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(255,127,4,1) 0%,rgba(255,167,61,1) 84%,rgba(255,183,107,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(255,127,4,1) 0%,rgba(255,167,61,1) 84%,rgba(255,183,107,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(255,127,4,1) 0%,rgba(255,167,61,1) 84%,rgba(255,183,107,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7f04', endColorstr='#ffb76b',GradientType=0 ); /* IE6-8 */
   position: absolute;
   float: none;
-
 }
 header {
   display: block;
@@ -65,33 +86,64 @@ nav{
   margin: 0 auto 0 auto;
   padding: 0;
 }
+nav ul{
+    list-style: none; /* Eliminamos el puntito negro */
+    display: block;
+    margin: 0 auto 0 auto;
+    height: 100%;
+    width:  900px;
+    }
+ 
+nav ul li{
+    float: left; /* Alineamos los botones del menú */
+
+    border-right: 3px solid white;
+    padding: 0 20px 0 20px;
+    line-height: 30px;
+    
+}
+nav ul li a, nav ul li a:link{
+    text-decoration: none; /* Quitamos el subrayado de los enlaces */
+    font-size: 18px; /* Tamaño del texto del menú */
+    color: white; /* Color del texto */
+    cursor: pointer;
+}
+nav ul li a:hover{
+    color: black; /* Cambiamos color de texto */
+    transition: all 0.5s linear; /* Comienzan las transiciones CSS3 */
+    -moz-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear; 
+    -o-transition: all 0.5s linear;
+  }
 
 #logo {
-    
+  font-size: 50px;
+  font-weight: bold;
   display: inline;
-  position: static;
-  width: auto;
-  height: auto;
+  position: relative;
   margin-left: 11.5px;
+  line-height: 100px;
   vertical-align: middle;
 }
-#searchDiv{
-  float: right;
-  position: static;
-  width: 1000px;
-  height: 50px;
-  display: inline;
-}
 .searchInput {
-  display: inline;
+  position: relative;
+  float: right;
   width: auto;
   height: auto;
   border-radius: 10px;
   border: 2px solid white;
   padding: 4px;
-  box-shadow: inset 0 2px 10px rgba(0,0,0,0.5);
-  vertical-align: middle;
-  alignment-adjust: middle;
+  background-color: rgba(0, 0, 0, 0.00);
+  color: white;
+  height: 20px;
+  top: 30px;
+  background-position: left center;
+  padding-left: 25px; 
+  background-position-x: 4px;
+  background-image: url(/images/search.png); 
+  background-repeat: no-repeat;
+  font-size: 16px;
+  
 }
 input.searchInput:active,
 input.searchInput:hover,
